@@ -35,12 +35,12 @@ module Players
       Game::WIN_COMBINATIONS.each do |combo|
         if combo.select{|c| board.cells[c] == token}.size == 2
           if combo.select{|c| board.cells[c] == other_token}.size == 0
-            winner = combo.select{|c| board.cells[c] == " "}[0]
+            winner = combo.select{|c| board.cells[c] == " "}[0] + 1
             break
           end
         end
       end
-      winner + 1
+      winner
     end
 
 

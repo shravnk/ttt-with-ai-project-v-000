@@ -50,6 +50,6 @@ end
 
 robot = Players::Computer.new("X")
 test_board = Board.new
-test_board.cells = ["X", " ", " ", " ", "X", " ", " ", " ", " "]
+test_board.cells = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 t = robot.move(test_board)
 binding.pry

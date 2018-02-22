@@ -73,7 +73,7 @@ class Game
       end
       reset
     end
-    
+
     def reset
       puts "Want to play again? (y/n)"
       again = gets.strip.downcase
@@ -101,6 +101,6 @@ class Game
         receive_input
       end
     end
-      
-      
+
+
 end

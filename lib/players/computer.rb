@@ -48,8 +48,8 @@ module Players
 
 end
 
-robot = Players::Computer.new("X")
-test_board = Board.new
-test_board.cells = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-t = robot.move(test_board)
-binding.pry
+# robot = Players::Computer.new("X")
+# test_board = Board.new
+# test_board.cells = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+# t = robot.move(test_board)
+# binding.pry

@@ -10,6 +10,8 @@ module Players
     def move(board)
       if check_for_wins(board)
         return check_for_wins(board).to_s
+      elsif block_wins(board)
+        return block_wins(board).to_s
       elsif !board.taken?("5")
         return "5"
       else

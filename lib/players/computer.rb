@@ -13,7 +13,7 @@ module Players
       elsif !board.taken?("5")
         return "5"
       else
-        [1..9].to_a.shuffle.each do |i|
+        [1..9].to_a.each do |i|
           if !board.taken?(i.to_s)
             return i.to_s
             break

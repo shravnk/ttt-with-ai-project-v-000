@@ -13,7 +13,7 @@ module Players
       elsif !board.taken?("5")
         return "5"
       else
-        rand(1..9).each do |i|
+        Random.new.rand(1..9).each do |i|
           if !board.taken?(i.to_s)
             return i.to_s
             break

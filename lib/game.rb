@@ -98,7 +98,7 @@ class Game
       else
         puts "Please enter a valid game type:"
         type = gets.strip
-        receive_input
+        receive_input(type)
       end
     end
 

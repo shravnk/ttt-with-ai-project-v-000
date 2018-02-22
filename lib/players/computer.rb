@@ -43,6 +43,19 @@ module Players
       winner
     end
 
+    def block_wins(board)
+      blocker = nil
+      Game::WIN_COMBINATIONS.each do |combo|
+        if combo.select{|c| board.cells[c] == other_token}.size == 2
+          if combo.select{|c| board.cells[c] == token}.size == 0
+            blocker = combo.select{|c| board.cells[c] == " "}[0] + 1
+            break
+          end
+        end
+      end
+      blocker
+    end
+
 
   end
 

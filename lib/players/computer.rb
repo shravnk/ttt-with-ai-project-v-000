@@ -18,6 +18,7 @@ module Players
             return i.to_s
             break
           end
+        end
       end
     end
 

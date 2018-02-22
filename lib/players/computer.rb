@@ -58,7 +58,6 @@ module Players
       blocker
     end
 
-
   end
 
 end
